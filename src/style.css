@@ -1,3 +1,5 @@
+/* formulario */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -5,7 +7,7 @@ body {
   
   .navbar {
     overflow: hidden;
-    background-color: #333; 
+    background-color: #94571a9d; 
   }
   
   .navbar a {
@@ -34,7 +36,7 @@ body {
   }
   
   .navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: red;
+    background-color: rgb(88, 63, 24);
   }
   
   .subnav-content {
@@ -78,13 +80,13 @@ body{
     padding: 15px;
 }
 .formulario{
-    background: #fff;
+    background: antiquewhite;
     margin-top: 100px;
 }
 h1{
     padding-top: 20px;
     text-align: center;
-    color: #1a2537;
+    color: #11701b;
     font-size: 40px;
 }
 img{
@@ -104,11 +106,13 @@ input[type="text"], input[type="password"]{
     margin-bottom: 15px;
     border: 1px solid #aaa;
 }
-.button{
+
+/* boton registro */
+.button{ 
     border: none;
     width: 100%;
     font-size: 20px;
-    color: white;
+    color: antiquewhite;
     background-color: #1a2537;
     padding: 15px 20px;
     border-radius: 5px;
@@ -158,7 +162,7 @@ h1{
   text-align: center;
   font-size: 70px;
   display: block      ;
-  color: antiquewhite;
+  color: rgb(49, 32, 9);
   font-family: "Waiting on the Bridge" ;
 }
 
@@ -193,9 +197,9 @@ h1{
 
 .container div img{
   width: 100%;
-  height: 200px;
-  box-shadow: 0 0 10px  #666;
-  border: 5px solid #fff;
+  height: 400px;
+  box-shadow: 0 0 px  #666;
+  border: 5px solid antiquewhite;
 }
 
 .container div img~span{
@@ -203,8 +207,8 @@ h1{
   display: block;
   opacity: 0;
   margin: 0;
-  padding: 2px 5px;
-  color: #fff;
+  padding: 1px 5px;
+  color: antiquewhite;
   background: rgba(0, 0, 0, 0.7);
   box-shadow: 10px #666;
   text-align: center;
@@ -219,7 +223,7 @@ h1{
 .container:hover div{
   opacity: 0.2;
   transform: scale(0.7);
-  transition: 2s;
+  transition: 1s;
 }
 
 .container:hover div:hover{
