@@ -87,27 +87,26 @@ body {
   color: #11701b;
   font-size: 40px;
 }
-img {
-  padding-top: 4px;
-  width: 35px;
-  height: 35px;
-  text-align: center;
-}
 
-.container-champions img {
-  padding-top: 4px;
-  width: 35px;
-  height: 35px;
-  text-align: center;
-}
 
-#game-index img {
+
+#game-index img,#about-box img {
   padding-top: 4px;
   width: 100%;
   height: 100%;
   text-align: center;
   padding: 15px;
 }
+
+
+
+
+.logo-nav {
+  width: 40px;
+  height: 40px;
+}
+
+
 
 input[type="text"],
 input[type="password"] {
@@ -156,7 +155,7 @@ p {
   }
 }
 
-/*   PERSONAJES*/
+/*  juegos*/
 
 * {
   margin: 0px;
@@ -178,26 +177,41 @@ h1, .login {
   font-family: "Waiting on the Bridge";
 }
 
-.champions {
-  width: 100%;
-  margin: 0 auto;
-}
 
-.container-game{
+.container-game, .container-game h2{
  color: #2b1805fc;
 }
 
-.container-game h2{
+/* .container-game h2{
   color: #2b1805fc;
+ } */
+
+ /* .game-index {
+  padding: 0 10%;
+   } */
+
+ .container-about, .container-game, .game-index{
+  color: #2b1805;
+  padding: 0 10% ;
+  text-align: center;
+ }
+ 
+ .container-about img{
+width: 300px;
  }
 
 
-.about-us {
-  color: antiquewhite;
-  background-color: #0000007e;
-}
+ .container-about h2{
+   color: #2b1805fc;
+  }
+ 
+.about-intro {
+    color: antiquewhite;
+  }
 
-.about-us h2 {
+
+
+.about-us, .about-us h2 {
   color: antiquewhite;
   background-color: #0000007e;
   font-size: 30px;
@@ -227,13 +241,15 @@ h1, .login {
   
 }
 
-.container-game::after {
+.container-game::after, .container-about::after {
   content: "";
   display: block;
   height: 0px;
   clear: both;
   
 }
+
+
 
 .container-store{
   width: 90%;
@@ -520,7 +536,7 @@ h2 {
 
 /* Para las secciones */
 
-#titulo-index {
+#title-index {
   text-align: center;
 }
 
@@ -531,7 +547,7 @@ h2 {
         } */
 
 .bg-light {
-  background-color: #94571a76;
+  background-color: #8a6948be;
   margin-top: 20px;
   padding: 20px 10px;
 }
@@ -583,15 +599,9 @@ h2 {
   border-radius: 10px;
 }
 
-#store h3{
-  color: antiquewhite;
-}
 
-/* p {
-  color: antiquewhite;
-} */
 
-.centro p {
+.centro p, #store h3{
   color: antiquewhite;
 }
 
@@ -603,3 +613,81 @@ footer {
   color: #94571ad0;
 }
 
+/*champions personajes*/
+
+.container-champions img {
+  padding-top: 4px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+}
+
+.champions{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+
+
+.container-champions::after{
+
+  content: "";
+  display: block;
+  height: 0px;
+  clear: both;
+}
+
+.container-champions{
+  width: 90%;
+  margin: 0 9%;
+}
+
+.container-champions div{
+  width: 28%;
+  height: auto;
+  display: inline;
+  float: left;
+  margin: 0% 3% 0% 0%;
+  padding: 0px;
+}
+
+.container-champions div img{
+  width: 420px;
+  height: 420px;
+  box-shadow: 0 0 10px  #666;
+  border: 5px solid #fff;
+}
+
+.container-champions div img~span{
+  width: 100%;
+  display: block;
+  opacity: 0;
+  margin: 0;
+  padding: 2px 5px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 10px #666;
+  text-align: center;
+}
+
+
+.container-champions div img:hover+span{
+  opacity: 1;
+
+}
+
+.container-champions:hover div{
+  opacity: 0.2;
+  transform: scale(0.7);
+  transition: 1s;
+}
+
+.container-champions:hover div:hover{
+  opacity: 1;
+  transform: scale(1);
+  
+}
