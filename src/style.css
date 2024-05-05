@@ -93,6 +93,15 @@ img {
   height: 35px;
   text-align: center;
 }
+
+#game-index img {
+  padding-top: 4px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 15px;
+}
+
 input[type="text"],
 input[type="password"] {
   text-align: center;
@@ -166,6 +175,15 @@ h1, .login {
   width: 100%;
   margin: 0 auto;
 } */
+
+.container-game{
+ color: #2b1805fc;
+}
+
+.container-game h2{
+  color: #2b1805fc;
+ }
+
 
 .about-us {
   color: antiquewhite;
