@@ -94,6 +94,13 @@ img {
   text-align: center;
 }
 
+.container-champions img {
+  padding-top: 4px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+}
+
 #game-index img {
   padding-top: 4px;
   width: 100%;
@@ -171,10 +178,10 @@ h1, .login {
   font-family: "Waiting on the Bridge";
 }
 
-/* .fotos {
+.champions {
   width: 100%;
   margin: 0 auto;
-} */
+}
 
 .container-game{
  color: #2b1805fc;
@@ -188,6 +195,20 @@ h1, .login {
 .about-us {
   color: antiquewhite;
   background-color: #0000007e;
+}
+
+.about-us h2 {
+  color: antiquewhite;
+  background-color: #0000007e;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.about-us p {
+  color: antiquewhite;
+  background-color: #0000007e;
+  font-size: 20px;
+  padding: 10px;
 }
 
 .container-form-index{
