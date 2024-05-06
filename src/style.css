@@ -88,9 +88,8 @@ body {
   font-size: 40px;
 }
 
-
-
-#game-index img,#about-box img {
+#game-index img,
+#about-box img {
   padding-top: 4px;
   width: 100%;
   height: 100%;
@@ -98,15 +97,10 @@ body {
   padding: 15px;
 }
 
-
-
-
 .logo-nav {
   width: 40px;
   height: 40px;
 }
-
-
 
 input[type="text"],
 input[type="password"] {
@@ -168,7 +162,8 @@ p {
   font-family: "Waiting on the Bridge";
   src: url(font/Waiting\ on\ the\ Bridge.ttf);
 }
-h1, .login {
+h1,
+.login {
   margin: 50px 0px;
   text-align: center;
   font-size: 70px;
@@ -177,41 +172,33 @@ h1, .login {
   font-family: "Waiting on the Bridge";
 }
 
-
-.container-game, .container-game h2{
- color: #2b1805fc;
+.container-game,
+.container-game h2 {
+  color: #2b1805fc;
 }
 
-/* .container-game h2{
-  color: #2b1805fc;
- } */
-
- /* .game-index {
-  padding: 0 10%;
-   } */
-
- .container-about, .container-game, .game-index{
+.container-about,
+.container-game,
+.game-index {
   color: #2b1805;
-  padding: 0 10% ;
+  padding: 0 10%;
   text-align: center;
- }
- 
- .container-about img{
-width: 300px;
- }
+}
 
+.container-about img {
+  width: 300px;
+}
 
- .container-about h2{
-   color: #2b1805fc;
-  }
- 
+.container-about h2 {
+  color: #2b1805fc;
+}
+
 .about-intro {
-    color: antiquewhite;
-  }
+  color: antiquewhite;
+}
 
-
-
-.about-us, .about-us h2 {
+.about-us,
+.about-us h2 {
   color: antiquewhite;
   background-color: #0000007e;
   font-size: 30px;
@@ -219,13 +206,13 @@ width: 300px;
 }
 
 .about-us p {
-  color: antiquewhite;
-  background-color: #0000007e;
+  /* color: antiquewhite;
+  background-color: #0000007e; */
   font-size: 20px;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
-.container-form-index{
+.container-form-index {
   width: 98%;
   max-width: 900px;
   margin: 0 auto;
@@ -233,28 +220,19 @@ width: 300px;
   text-align: center;
 }
 
+.container-game::after,
+.container-about::after,
 .container-store::after {
   content: "";
   display: block;
   height: 0px;
   clear: both;
-  
 }
 
-.container-game::after, .container-about::after {
-  content: "";
-  display: block;
-  height: 0px;
-  clear: both;
-  
-}
-
-
-
-.container-store{
+/* .container-store {
   width: 90%;
   margin: 0 9%;
-}
+} */
 
 .container-store div {
   width: 28%;
@@ -265,7 +243,7 @@ width: 300px;
   padding: 0px;
 }
 
-.container-store  div img {
+.container-store div img {
   width: 100%;
   height: 400px;
   box-shadow: 0 0 px #ce0707;
@@ -305,7 +283,8 @@ width: 300px;
   /* margin     : 0px;
   padding    : 0px; */
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
   display: flex;
 
@@ -422,10 +401,8 @@ width: 300px;
   margin: 0 auto;
 }
 
-
-
-        /* General */
-        section {
+/* General */
+section {
   padding: 60px 0;
 }
 .container-index {
@@ -433,8 +410,6 @@ width: 300px;
   max-width: 900px;
   margin: 0 auto;
 }
-
-
 
 h2 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -560,7 +535,7 @@ h2 {
   text-align: center;
 
   /* https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_background_hero */
- background-image: url(../src/media/video/iglesia.gif);
+  background-image: url(../src/media/video/iglesia.gif);
   background-color: #cccccc;
   background-position: center;
   background-repeat: no-repeat;
@@ -577,7 +552,7 @@ h2 {
   border-radius: 5px;
   padding: 50px 20px;
   margin: 5px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: sans-serif;
   vertical-align: top;
 }
 @media (min-width: 768px) {
@@ -593,17 +568,20 @@ h2 {
   border-radius: 50%;
 }
 
-
-#pixel h3, #virtual h3, #realm h3  {
+#pixel h3,
+#virtual h3,
+#realm h3,
+#galaxy h3{
   background-color: #94571a9d;
   border-radius: 10px;
 }
 
-
-
-.centro p, #store h3{
+.centro p,
+#store h3 {
   color: antiquewhite;
 }
+
+
 
 /* footer */
 footer {
@@ -615,38 +593,34 @@ footer {
 
 /*champions personajes*/
 
-.container-champions img {
+.container-champions img, .form img{
   padding-top: 4px;
   width: 35px;
   height: 35px;
   text-align: center;
 }
 
-.champions{
+.champions {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
-
 }
 
-
-
-.container-champions::after{
-
+.container-champions::after {
   content: "";
   display: block;
   height: 0px;
   clear: both;
 }
 
-.container-champions{
+.container-champions {
   width: 90%;
   margin: 0 9%;
 }
 
-.container-champions div{
+.container-champions div {
   width: 28%;
   height: auto;
   display: inline;
@@ -655,14 +629,14 @@ footer {
   padding: 0px;
 }
 
-.container-champions div img{
+.container-champions div img {
   width: 420px;
   height: 420px;
-  box-shadow: 0 0 10px  #666;
+  box-shadow: 0 0 10px #666;
   border: 5px solid #fff;
 }
 
-.container-champions div img~span{
+.container-champions div img ~ span {
   width: 100%;
   display: block;
   opacity: 0;
@@ -674,20 +648,17 @@ footer {
   text-align: center;
 }
 
-
-.container-champions div img:hover+span{
+.container-champions div img:hover + span {
   opacity: 1;
-
 }
 
-.container-champions:hover div{
+.container-champions:hover div {
   opacity: 0.2;
   transform: scale(0.7);
   transition: 1s;
 }
 
-.container-champions:hover div:hover{
+.container-champions:hover div:hover {
   opacity: 1;
   transform: scale(1);
-  
 }
