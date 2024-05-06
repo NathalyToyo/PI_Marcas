@@ -15,6 +15,14 @@
   <!-- Contact Form JavaScript File -->
   <script>
     new WOW().init();
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
   </script>
 
 </head>
@@ -23,7 +31,7 @@
 
 
 <body>
-  <div class="navbar">
+  <div class="topnav" id="myTopnav">
     <div class="subnav">
       <img class="logo-nav" src="../icon/favicon.jpg" alt="">
     </div>
@@ -83,8 +91,12 @@
     <div class="subnav">
       <a href="login.html">Área de clientes</a>
     </div>
-
+     
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
+
   <h1>Open System Gaming</h1>
 
   <!-- Sección de juegos -->

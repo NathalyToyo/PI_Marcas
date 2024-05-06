@@ -8,12 +8,29 @@
   <link rel="stylesheet" href="../style.css" />
   <link rel="shortcut icon" href="../icon/favicon.jpg" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="../lib/animate/animate.css" type='text/css' media='all'>
+
+  <script src="../lib/wow/wow.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script>
+    new WOW().init();
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
 </head>
 
 
 
 <body>
-  <div class="navbar">
+  <div class="topnav" id="myTopnav">
     <div class="subnav">
       <img class="logo-nav" src="../icon/favicon.jpg" alt="">
     </div>
@@ -75,9 +92,12 @@
     </div>
 
   </div>
+ 
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
-
-  <div>
     <h1>Personajes</h1>
   </div>
   <section class="champions">
