@@ -1,0 +1,292 @@
+/* para index*/
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    /* background: url(img/fondo8.jpg); */
+    background-color: #725b443d;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+
+
+.logo-nav {
+  width: 50px;
+  height: auto;
+  display: block;
+  margin: 0 ;
+  padding: 0;
+}
+
+/* General */
+section {
+  padding: 60px 0;
+}
+.container-index {
+  width: 98%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#title-index {
+    text-align: center;
+  }
+
+h2 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      color: #251505cd;
+    text-align: center;
+    border-bottom: 1px solid;
+  }
+
+  /* texto div blanco apartado productos */
+  .text {
+    margin: 20px 0;
+  }
+  
+  /* Responsive - Mobile First  */
+  
+  [class*="col-"] {
+    padding: 15px;
+    display: inline-block;
+  }
+  /* For mobile phones: */
+  /* 
+  /* 
+  .col-1, 
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 
+  */
+  .col-1 {
+   width: 100%;
+  } 
+  
+  @media (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {
+      width: 75%;
+    }
+    /* .col-9 {
+      width: 8.33%;
+    }
+    .col-2 {
+      width: 16.66%;
+    }
+    .col-3 {
+      width: 25%;
+    }
+    .col-4 {
+      width: 33.33%;
+    }
+    .col-5 {
+      width: 41.66%;
+    }
+    .col-6 {
+      width: 50%;
+    }
+    .col-7 {
+      width: 58.33%;
+    }
+    .col-8 {
+      width: 66.66%;
+    }
+*/
+  
+/*
+    .col-10 {
+      width: 83.33%;
+    }
+    .col-11 {
+      width: 91.66%;
+    }
+    .col-12 {
+      width: 100%;
+    } */
+  
+    .row {
+      display: inline-flex;
+    }
+  }
+
+
+
+/* MENU DE ARRIBA  */
+
+
+  .topnav {
+    overflow: hidden;
+    background-color: #8a6948be;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #8a6948fa;
+    color: white;
+  }
+  
+  /* TRES RAYITAS */
+  .topnav .icon {
+    display: none;
+  }
+  
+/* MENU RESPONSIVE */
+
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+/* 
+  FONDO CLARO medio Y FONDO BLANCO */
+
+  .bg-light {
+    background-color: #8a6948be;
+    margin-top: 20px;
+    padding: 20px 10px;
+  }
+  .bg-white {
+    background-color: white;
+  }
+
+
+  #store  {
+    background-color: #25150539;
+    text-align: center;
+  
+    /* https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_background_hero */
+    /* background-image: url(../src/media/video/iglesia.gif); */
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .store-card{
+    width: 90%;
+    display: inline-block;
+    text-align: center;
+    background-color: #2515053b;
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 50px 20px;
+    margin: 5px;
+    font-family: sans-serif;
+    vertical-align: top;
+  }
+  @media (min-width: 768px) {
+    .store-card {
+      width: 20%;
+    }
+    .store-card:hover {
+      background-color: #8a6948be;
+    }
+  }
+  .store-card img {
+    width: 50%;
+    border-radius: 50%;
+  }
+  
+
+
+  #pixel h3,
+  #virtual h3,
+  #realm h3,
+  #galaxy h3{
+    background-color: #8a6948be;
+    border-radius: 10px;
+  }
+  
+  .store-card p,
+  #store h3 {
+    color:  #251505cd;
+  }
+  
+  
+  .container-store div {
+    width: 28%;
+    height: auto;
+    display: inline;
+    float: left;
+    margin: 0% 3% 0% 0%;
+    padding: 0px;
+    
+  }
+  
+  .container-store div img {
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 0 px #ce0707;
+    border: 5px solid antiquewhite;
+  }
+ 
+ 
+  
+  /* footer */
+  footer {
+    padding: 30px 0;
+    background-color: #2b1805b2;
+    text-align: center;
+    color: #ffffffd0;
+  }
+
+
+  .container-form-index {
+    width: 98%;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #251505cd;
+    text-align: center;
+   
+  }
+  
+
+
+  
