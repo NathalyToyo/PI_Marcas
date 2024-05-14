@@ -6,48 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Open System Gaming</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="..icon/favicon.jpg" />
+  <link rel="shortcut icon" href="icon/favicon.jpg" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-
-
 
 </head>
 
 
 <body>
-  
-  <style>
- 
-    </style>
-    </head>
-    <body>
-    
-    <div class="topnav" id="myTopnav">
-      <!-- <a href="#about"> <img class="logo-nav" src="icon/favicon.jpg" alt=""></a>
+
+  <!-- SECCION MENU  -->
+  <div class="topnav" id="myTopnav">
+    <!-- <a href="#about"> <img class="logo-nav" src="icon/favicon.jpg" alt=""></a>
        -->
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">Quiénes somos</a>
-      <a href="games.html">Juegos</a>
-      <a href="products.html">Expansiones / Productos </a>
-      <a href="character.html">Personajes </a>
-      <a href="blog.html">Blog </a>
-      <a href="login.html">Área de clientes</a>
-      
-      <!-- /*boton 3 rayitas menu para menu responsive de w3school*/ -->
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
-        <!-- ^ Esta línea crea un enlace  con una clase llamada “icon”. 
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">Quiénes somos</a>
+    <a href="games.html">Juegos</a>
+    <a href="products.html">Expansiones / Productos </a>
+    <a href="character.html">Personajes </a>
+    <a href="blog.html">Blog </a>
+    <a href="login.html">Área de clientes</a>
+
+    <!-- /*boton 3 rayitas menu para menu responsive de w3school*/ -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <!-- ^ Esta línea crea un enlace  con una clase llamada “icon”. 
           ejecuta una función de JavaScript cuando se hace clic en el enlace.  -->
 
-        <i class="fa fa-bars"></i> 
-        <!-- Dentro del enlace, hay un ícono (3 rayitas) con la clase  -->
-      </a>
-    </div>
-  
-    <!-- /*boton 3 rayitas menu se activa cuando se hace clic en un botón o enlace con la clase “topnav”
+      <i class="fa fa-bars"></i>
+      <!-- Dentro del enlace, hay un ícono (3 rayitas) con la clase  -->
+    </a>
+  </div>
+
+  <!-- /*boton 3 rayitas menu se activa cuando se hace clic en un botón o enlace con la clase “topnav”
      esto permite que el menú de la web se vuelva “responsive”´
       (es decir, se adapte a diferentes tamaños de pantalla -->
-    <script>
+  <script>
     function myFunction() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
@@ -56,28 +48,30 @@
         x.className = "topnav";
       }
     }
-    </script>
-    
-   
+  </script>
+ <!-- FIN SECCION MENU  -->
 
+ 
 
+  <!-- SECCION FORMULARIO  -->
 
-    <form class="form-formulario">
-      <h1 class="form-h1">LOGIN DE USUARIO</h1>
-      <div class="form-contenedor">
-          <div class="form-input-contenedor">
-              <img class="form-icon" src="icon/mensaje2.png">
-              <input type="text" placeholder="Correo electronico" class="email"> 
-          </div>
-          <div class="form-input-contenedor">
-              <img class="form-icon" src="icon/password.png">
-              <input type="password" placeholder="Contraseña" class="passwd">
-          </div>
-          <input type="submit" value="Registro" class="form-button">
-          <p class="form-p">Al registrarse, acepta nuestra condiciones de uso y politica de privacidad.</p>
-          <p class="form-p">¿No tiene una cuenta? <a class="link" href="signup.html">Registro</a></p>
+  <form class="form-formulario">
+    <h1 class="form-h1">LOGIN DE USUARIO</h1>
+    <div class="form-contenedor">
+      <div class="form-input-contenedor">
+        <img class="form-icon" src="icon/mensaje2.png">
+        <input type="text" placeholder="Correo electronico" class="email">
       </div>
+      <div class="form-input-contenedor">
+        <img class="form-icon" src="icon/password.png">
+        <input type="password" placeholder="Contraseña" class="passwd">
+      </div>
+      <input type="submit" value="Registro" class="form-button">
+      <p class="form-p">Al registrarse, acepta nuestra condiciones de uso y politica de privacidad.</p>
+      <p class="form-p">¿No tiene una cuenta? <a class="link" href="signup.html">Registro</a></p>
+    </div>
   </form>
+  <!-- FIN SECCION FORMULARIO  -->
 
 
 
@@ -87,9 +81,7 @@
 
 
 
-
-  <!-- FIN Sección tiendas -->
-
+  <!-- SECCION CONTACTO  -->
   <section id="contact">
     <div class="container-form-index">
       <h2>CONTACTA CON NOSOTROS</h2>
@@ -119,18 +111,18 @@
         <input type="submit" value="Enviar">
 
 
-
-
       </form>
     </div>
 
   </section>
-
+  <!-- FIN SECCION CONTACTO  -->
 
 </body>
+
+<!-- SECCION FOOTER -->
 <footer>
   <p>Author: Nathaly Ramírez y Ali Chalak</p>
   <hr>
   <p><a href="mailto:nathalyramirez.web@gmail.com">nathalyramirez.web@gmail.com</a></p>
 </footer>
-</body>
+<!--FIN  SECCION FOOTER -->
