@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open System Gaming</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="icon/favicon.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Open System Gaming</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="icon/favicon.jpg" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <body>
+    <!-- SECCION MENU  -->
 
-</head>
-
-
-<body>
-  
-
-        <!-- SECCION MENU  -->
-    
     <div class="topnav" id="myTopnav">
-      <!-- <a href="#about"> <img class="logo-nav" src="icon/favicon.jpg" alt=""></a>
-       -->
+      <!-- <a href="#about"> <img class="logo-nav" src="icon/favicon.jpg" alt=""></a>-->
       <a href="index.html" class="active">Home</a>
       <a href="about.html">Quiénes somos</a>
       <a href="games.html">Juegos</a>
@@ -27,219 +24,285 @@
       <a href="character.html">Personajes </a>
       <a href="blog.html">Blog </a>
       <a href="login.html">Área de clientes</a>
-      
+
       <!-- /*boton 3 rayitas menu para menu responsive de w3school*/ -->
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <!-- ^ Esta línea crea un enlace  con una clase llamada “icon”. 
           ejecuta una función de JavaScript cuando se hace clic en el enlace.  -->
 
-        <i class="fa fa-bars"></i> 
+        <i class="fa fa-bars"></i>
         <!-- Dentro del enlace, hay un ícono (3 rayitas) con la clase  -->
       </a>
     </div>
-  
+
     <!-- /*boton 3 rayitas menu se activa cuando se hace clic en un botón o enlace con la clase “topnav”
      esto permite que el menú de la web se vuelva “responsive”´
       (es decir, se adapte a diferentes tamaños de pantalla -->
     <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
       }
-    }
     </script>
-      <!-- FIN  SECCION MENU  -->
-   
-<!-- SECCION TITULO E INFORMACION -->
+    <!-- FIN  SECCION MENU  -->
 
-  <section id="title-index">
-    <div class="container-index">
-      <h1> Open System Gaming</h1>
-      <h4>Somos una empresa dedicada al ámbito del desarrollo, consultoría,
-        implementación y gestión de proyectos</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea architecto consequatur dignissimos aut pariatur expedita. Dolorum quam quod debitis molestiae optio molestias blanditiis incidunt illo minus, facere perferendis. Error, iste!</p>
-      <br>
-      <h3>Distribuidora oficial </h3>
-      <h2 class="my-5">Próximamente</h2>
+    <!-- SECCION TITULO E INFORMACION -->
 
-      <iframe class="col-1" width="900" height="415"
-        src="https://cdn.pixabay.com/video/2021/08/28/86609-594416584_large.mp4" title="video" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
+    <section id="title-index">
+      <div class="container-index">
+        <h1>Open System Gaming</h1>
+        <h4>
+          Somos una empresa dedicada al ámbito del desarrollo, consultoría,
+          implementación y gestión de proyectos
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea architecto
+          consequatur dignissimos aut pariatur expedita. Dolorum quam quod
+          debitis molestiae optio molestias blanditiis incidunt illo minus,
+          facere perferendis. Error, iste!
+        </p>
+        <br />
+        <h3>Distribuidora oficial</h3>
+        <h2 class="my-5">Próximamente</h2>
 
-  </section>
-  <!-- FIN Sección con el título   -->
+        <iframe
+          class="col-1"
+          width="900"
+          height="415"
+          src="https://cdn.pixabay.com/video/2021/08/28/86609-594416584_large.mp4"
+          title="video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <!-- FIN Sección con el título   -->
 
+    <!-- Sección de PRODUCTOS/INFO -->
+    <section class="bg-light">
+      <div class="container-game">
+        <h2>DESCUBRE NUESTROS PRODUCTOS MÁS POPULARES</h2>
+        <br />
+        <h4>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae sint
+          non quis dolor quam expedita natus, dicta inventore dolores obcaecati
+          sapiente consequuntur iusto voluptas nulla velit? Sapiente ipsa
+          officiis debitis!
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime at
+          sequi consectetur accusamus consequuntur corrupti ea ad laboriosam!
+          Id, ullam! Placeat natus corrupti quas eveniet quam architecto
+          mollitia alias distinctio?
+        </p>
 
-  <!-- Sección de PRODUCTOS/INFO -->
-  <section class="bg-light">
-    <div class="container-game">
-      <h2>DESCUBRE NUESTROS PRODUCTOS MÁS POPULARES</h2>
-      <br>
-      <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae sint non quis dolor quam expedita natus,
-        dicta inventore dolores obcaecati sapiente consequuntur iusto voluptas nulla velit? Sapiente ipsa officiis
-        debitis!
-      </h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime at sequi consectetur accusamus consequuntur
-        corrupti ea ad laboriosam! Id, ullam! Placeat natus corrupti quas eveniet quam architecto mollitia alias
-        distinctio?</p>
-
-      <div class="bg-white text row">
-
-        <div id="game-index" class="col-6">
-          <img src="img/index/juego1.jpg" alt="juego" width="100%" height="auto">
+        <div class="bg-white text row">
+          <div id="game-index" class="col-6">
+            <img
+              src="img/index/juego1.jpg"
+              alt="juego"
+              width="100%"
+              height="auto"
+            />
+          </div>
+          <div class="col-6">
+            <h2>Ecos de la eternindad</h2>
+            <h3>Sumérgete en “Ecos de la Eternidad”</h3>
+            <h4>
+              un videojuego de rol que te transporta a un mundo antiguo y
+              misterioso. En este reino, las leyendas cobran vida y los mitos
+              son más que cuentos.
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio molestias inventore exercitationem qui ipsum quia, quo
+              nobis est nisi dolore perspiciatis eveniet perferendis, enim nam.
+              Iure officiis atque tempora ipsa!
+            </p>
+          </div>
         </div>
-        <div class="col-6">
-          <h2>Ecos de la eternindad</h2>
-          <H3>Sumérgete en “Ecos de la Eternidad”</H3>
-          <h4>un videojuego de rol que te transporta a un mundo antiguo y misterioso. En este reino, las leyendas cobran
-            vida y los mitos son más que cuentos.</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio molestias inventore exercitationem qui
-            ipsum quia, quo nobis est nisi dolore perspiciatis eveniet perferendis, enim nam. Iure officiis atque
-            tempora ipsa!</p>
+
+        <div class="bg-white text row">
+          <div class="col-5">
+            <h2>Ecos de la eternindad</h2>
+            <h3>Sumérgete en “Ecos de la Eternidad”</h3>
+            <h4>
+              un videojuego de rol que te transporta a un mundo antiguo y
+              misterioso. En este reino, las leyendas cobran vida y los mitos
+              son más que cuentos.
+            </h4>
+            <p>
+              Encarna a un héroe destinado a descifrar los secretos de una
+              civilización perdida mientras enfrentas criaturas legendarias y
+              resuelves enigmas ancestrales. Con cada elección, forjas tu
+              destino y el del mundo que te rodea. ¿Estás listo para escuchar
+              los ecos del pasado y convertirte en parte de la leyenda?
+            </p>
+          </div>
+          <div id="game-index" class="col-7">
+            <img
+              src="img/index/juego1.jpg"
+              alt="juego"
+              width="100%"
+              height="auto"
+            />
+          </div>
+        </div>
+
+        <div class="bg-white text row">
+          <div id="game-index" class="col-8">
+            <img
+              src="img/index/juego1.jpg"
+              alt="juego"
+              width="100%"
+              height="auto"
+            />
+          </div>
+          <div class="col-4">
+            <h2>Ecos de la eternindad</h2>
+            <h3>Sumérgete en “Ecos de la Eternidad”</h3>
+            <h4>
+              un videojuego de rol que te transporta a un mundo antiguo y
+              misterioso. En este reino, las leyendas cobran vida y los mitos
+              son más que cuentos.
+            </h4>
+            <p>
+              Encarna a un héroe destinado a descifrar los secretos de una
+              civilización perdida mientras enfrentas criaturas legendarias y
+              resuelves enigmas ancestrales. Con cada elección, forjas tu
+              destino y el del mundo que te rodea. ¿Estás listo para escuchar
+              los ecos del pasado y convertirte en parte de la leyenda?
+            </p>
+          </div>
         </div>
       </div>
-
-      <div class="bg-white text row">
-
-        <div class="col-5">
-          <h2>Ecos de la eternindad</h2>
-          <H3>Sumérgete en “Ecos de la Eternidad”</H3>
-          <h4>un videojuego de rol que te transporta a un mundo antiguo y misterioso. En este reino, las leyendas cobran
-            vida y los mitos son más que cuentos.</h4>
-          <p>Encarna a un héroe destinado a descifrar los secretos de una civilización perdida mientras enfrentas
-            criaturas legendarias y resuelves enigmas ancestrales. Con cada elección, forjas tu destino y el del mundo
-            que te rodea. ¿Estás listo para escuchar los ecos del pasado y convertirte en parte de la leyenda?</p>
-        </div>
-        <div id="game-index" class="col-7">
-          <img src="img/index/juego1.jpg" alt="juego" width="100%" height="auto">
-        </div>
-      </div>
-
-      <div class="bg-white text row">
-
-        <div id="game-index" class="col-8">
-          <img src="img/index/juego1.jpg" alt="juego" width="100%" height="auto">
-        </div>
-        <div class="col-4">
-          <h2>Ecos de la eternindad</h2>
-          <H3>Sumérgete en “Ecos de la Eternidad”</H3>
-          <h4>un videojuego de rol que te transporta a un mundo antiguo y misterioso. En este reino, las leyendas cobran
-            vida y los mitos son más que cuentos.</h4>
-          <p>Encarna a un héroe destinado a descifrar los secretos de una civilización perdida mientras enfrentas
-            criaturas legendarias y resuelves enigmas ancestrales. Con cada elección, forjas tu destino y el del mundo
-            que te rodea. ¿Estás listo para escuchar los ecos del pasado y convertirte en parte de la leyenda?</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
     <!-- Sección de PRODUCTOS/INFO -->
 
+    <!-- seccion tiendas -->
 
-<!-- seccion tiendas -->
+    <section id="store">
+      <div class="container-store">
+        <h2>Tiendas Físicas</h2>
+        <h3>
+          En el emocionante mundo de la tecnología y los videojuegos, nuestra
+          empresa se destaca por ofrecer experiencias de juego inmersivas y
+          vanguardistas. Desarrollamos juegos que no solo entretienen, sino que
+          también desafían y enriquecen a nuestros jugadores. ¡Visita nuestras
+          tiendas físicas para descubrir las últimas novedades y sumérgete en la
+          aventura que solo la tecnología de punta puede proporcionar!
+        </h3>
 
-  <section id="store">
-    <div class="container-store">
+        <figure id="pixel" class="store-card">
+          <img src="img/index/tienda3.jpg" alt="pixel" />
+          <h3>Pixel Haven</h3>
+          <h4>En el cc Parquesur</h4>
+          <p>
+            Pixel Haven comprende estaciones de demostración de última
+            generación y una selección de títulos indie y triple A, esta tienda
+            es el lugar perfecto para probar antes de comprar. Además,
+            organizamos torneos semanales que son el punto de encuentro de la
+            comunidad gamer local.
+          </p>
+        </figure>
+        <figure id="virtual" class="store-card">
+          <img src="img/index/tienda2.jpg" alt="virtual" />
+          <h3>Virtual Quest</h3>
+          <h4>En el cc ABC SERRANO</h4>
+          <p>
+            Es una experiencia completa. Con áreas dedicadas a la realidad
+            virtual y aumentada, los visitantes pueden sumergirse en mundos
+            alternativos. Nuestro personal experto está siempre disponible para
+            guiar a los jugadores a través de las últimas tecnologías.
+          </p>
+        </figure>
 
-      <h2>Tiendas Físicas</h2>
-      <h3>En el emocionante mundo de la tecnología y los videojuegos, nuestra empresa se destaca por ofrecer
-        experiencias de juego inmersivas y vanguardistas. Desarrollamos juegos que no solo entretienen, sino que también
-        desafían y enriquecen a nuestros jugadores. ¡Visita nuestras tiendas físicas para descubrir las últimas
-        novedades y sumérgete en la aventura que solo la tecnología de punta puede proporcionar! </h3>
+        <figure id="realm" class="store-card">
+          <img src="img/index/tienda1.jpg" alt="realm " />
+          <h3>Retro Remam</h3>
+          <h4>En el cc Plaza Norte 2</h4>
+          <p>
+            Para aquellos que añoran los días de los cartuchos y los píxeles,
+            Retro Reamam es un paraíso nostálgico en el norte de la ciudad. Con
+            una vasta colección de consolas y juegos clásicos, además de una
+            zona de arcade, esta tienda lleva a un viaje al pasado de los
+            videojuegos.
+          </p>
+        </figure>
 
+        <figure id="galaxy" class="store-card">
+          <img src="img/index/tienda4.jpg" alt="galaxy " />
+          <h3>Game Galaxy</h3>
+          <h4>En el cc Príncipe Pío</h4>
+          <p>
+            Al entrar, te sumerges en un universo donde la realidad y la
+            fantasía colisionan. Cada estante está meticulosamente organizado,
+            mostrando una amplia selección de juegos para todas las plataformas,
+            desde las consolas más modernas hasta las reliquias retro.
+          </p>
+        </figure>
+      </div>
+    </section>
 
+    <!-- FIN Sección tiendas -->
 
-      <figure id="pixel" class="store-card">
-        <img src="img/index/tienda3.jpg" alt="pixel">
-        <h3>Pixel Haven</h3>
-        <h4>En el cc Parquesur </h4>
-        <p>Pixel Haven comprende estaciones de demostración de última generación y una selección de títulos indie y
-          triple A, esta tienda es el lugar perfecto para probar antes de comprar. Además, organizamos torneos semanales
-          que son el punto de encuentro de la comunidad gamer local. </p>
-      </figure>
-      <figure id="virtual" class="store-card">
-        <img src="img/index/tienda2.jpg" alt="virtual">
-        <h3>Virtual Quest</h3>
-        <h4>En el cc ABC SERRANO </h4>
-        <p>Es una experiencia completa. Con áreas dedicadas a la realidad virtual y aumentada, los visitantes pueden
-          sumergirse en mundos alternativos. Nuestro personal experto está siempre disponible para guiar a los jugadores
-          a través de las últimas tecnologías. </p>
+    <!-- SECCION CONTACTO -->
+    <section id="contact">
+      <div class="container-form-index">
+        <h2>CONTACTA CON NOSOTROS</h2>
+        <h3>Estaremos encantados de ayudarle personalmente.</h3>
 
-      </figure>
+        <form action="action_page.php" autocomplete="on">
+          <label for="fname">Nombre:</label><br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Escriba su nombre completo"
+          /><br />
+          <label for="text">Descripción:</label><br />
+          <input
+            type="text"
+            id="text"
+            name="text"
+            placeholder="Escriba su mensaje aquí"
+          /><br /><br />
 
-      <figure id="realm"  class="store-card">
-        <img src="img/index/tienda1.jpg"  alt="realm ">
-        <h3>Retro Remam</h3>
-        <h4>En el cc Plaza Norte 2 </h4>
-        <p>Para aquellos que añoran los días de los cartuchos y los píxeles, Retro Reamam es un paraíso nostálgico en el
-          norte de la ciudad. Con una vasta colección de consolas y juegos clásicos, además de una zona de arcade, esta
-          tienda lleva a un viaje al pasado de los videojuegos. </p>
-      </figure>
+          <label for="temas">Escoge un tema:</label>
 
-      <figure id="galaxy" class="store-card">
-        <img src="img/index/tienda4.jpg" alt="galaxy ">
-        <h3>Game Galaxy</h3>
-        <h4>En el cc Príncipe Pío </h4>
-        <p>Al entrar, te sumerges en un universo donde la realidad y la fantasía colisionan. Cada estante está
-          meticulosamente organizado, mostrando una amplia selección de juegos para todas las plataformas, desde las
-          consolas más modernas hasta las reliquias retro. </p>
-      </figure>
+          <select id="temas-contacto" name="temas">
+            <option value="Producto">Producto</option>
+            <option value="Pedidos">Pedidos</option>
+            <option value="Nuestras tiendas">Tienda</option>
+            <option value="Quejas">Quejas</option>
+            <option value="Informar de un problema">
+              Informar de un problema
+            </option>
+            <option value="Abre una franquicia">Abre una franquicia</option>
+            <option value="Trabaja con nosotros">Trabaja con nosotros</option>
+          </select>
+          <br /><br />
 
-
-    </div>
-  </section>
-
-
-  <!-- FIN Sección tiendas -->
-
-
-  <!-- SECCION CONTACTO -->
-  <section id="contact">
-    <div class="container-form-index">
-      <h2>CONTACTA CON NOSOTROS</h2>
-      <h3>Estaremos encantados de ayudarle personalmente.</h3>
-
-      <form action="action_page.php" autocomplete="on">
-        <label for="fname">Nombre:</label><br>
-        <input type="text" id="fname" name="fname" placeholder="Escriba su nombre completo"><br>
-        <label for="text">Descripción:</label><br>
-        <input type="text" id="text" name="text" placeholder="Escriba su mensaje aquí"><br><br>
-
-        <label for="temas">Escoge un tema:</label>
-
-        <select id="temas-contacto" name="temas">
-
-
-          <option value="Producto">Producto</option>
-          <option value="Pedidos">Pedidos</option>
-          <option value="Nuestras tiendas">Tienda</option>
-          <option value="Quejas">Quejas</option>
-          <option value="Informar de un problema">Informar de un problema</option>
-          <option value="Abre una franquicia">Abre una franquicia</option>
-          <option value="Trabaja con nosotros">Trabaja con nosotros</option>
-        </select>
-        <br><br>
-
-        <input type="submit" value="Enviar">
-
-
-
-
-      </form>
-    </div>
-
-  </section>
-  <!-- FIN SECCION CONTACTO  -->
-
-</body>
-<!-- SECCION FOOTER  -->
-<footer>
-  <p>Author: Nathaly Ramírez y Ali Chalak</p>
-  <hr>
-  <p><a href="mailto:nathalyramirez.web@gmail.com">nathalyramirez.web@gmail.com</a></p>
-</footer>
-<!-- FIN SECCION FOOTER  -->
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
+    </section>
+    <!-- FIN SECCION CONTACTO  -->
+  </body>
+  <!-- SECCION FOOTER  -->
+  <footer>
+    <p>Author: Nathaly Ramírez y Ali Chalak</p>
+    <hr />
+    <p>
+      <a href="mailto:nathalyramirez.web@gmail.com"
+        >nathalyramirez.web@gmail.com</a
+      >
+    </p>
+  </footer>
+  <!-- FIN SECCION FOOTER  -->
+</html>

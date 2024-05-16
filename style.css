@@ -58,6 +58,38 @@ h2 {
     padding: 15px;
     display: inline-block;
   }
+
+
+
+  .about-img{
+    height: 400px;
+    width: 400px;  
+  }
+
+  @media screen and (max-width: 768px) {
+    .about-img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.about-container{
+font-size: 18px;
+}
+
+.about-text{
+  padding-top: 5px;
+  padding-right: 70px;
+  padding-left: 70px;
+  padding-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.250);
+}
+
+@media screen and (max-width: 768px) {
+  .about-text {
+    padding: 5px;
+  }
+}
   /* For mobile phones: */
   /* 
   /* 
@@ -83,6 +115,8 @@ h2 {
     .col-1 {
       width: 75%;
     }
+
+    
     /* 
     .col-2 {
       width: 16.66%;
