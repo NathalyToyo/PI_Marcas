@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open System Gaming</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="icon/favicon.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Open System Gaming</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="icon/favicon.jpg" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-</head>
-
-<body>
-  
-  
-      <!-- SECCION MENU  -->
+  <body>
+    <!-- SECCION MENU  -->
     <div class="topnav" id="myTopnav">
       <!-- <a href="#about"> <img class="logo-nav" src="icon/favicon.jpg" alt=""></a>
        -->
@@ -25,91 +24,341 @@
       <a href="character.html">Personajes </a>
       <a href="blog.html">Blog </a>
       <a href="login.html">Área de clientes</a>
-      
+
       <!-- /*boton 3 rayitas menu para menu responsive de w3school*/ -->
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <!-- ^ Esta línea crea un enlace  con una clase llamada “icon”. 
           ejecuta una función de JavaScript cuando se hace clic en el enlace.  -->
 
-        <i class="fa fa-bars"></i> 
+        <i class="fa fa-bars"></i>
         <!-- Dentro del enlace, hay un ícono (3 rayitas) con la clase  -->
       </a>
     </div>
-  
+
     <!-- /*boton 3 rayitas menu se activa cuando se hace clic en un botón o enlace con la clase “topnav”
      esto permite que el menú de la web se vuelva “responsive”´
       (es decir, se adapte a diferentes tamaños de pantalla -->
     <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
       }
-    }
     </script>
-    
-   <!-- FIN SECCION MENU -->
 
+    <!-- FIN SECCION MENU -->
 
-
-    <!-- PONER EJERCICIO DE FLIPCARD PARA PONER PERSONAJES OJO CON EL CSS -->
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- SECCION CONTACTO  -->
-  <section id="contact">
-    <div class="container-form-index">
-      <h2>CONTACTA CON NOSOTROS</h2>
-      <h3>Estaremos encantados de ayudarle personalmente.</h3>
-
-      <form action="action_page.php" autocomplete="on">
-        <label for="fname">Nombre:</label><br>
-        <input type="text" id="fname" name="fname" placeholder="Escriba su nombre completo"><br>
-        <label for="text">Descripción:</label><br>
-        <input type="text" id="text" name="text" placeholder="Escriba su mensaje aquí"><br><br>
-
-        <label for="temas">Escoge un tema:</label>
-
-        <select id="temas-contacto" name="temas">
-
-
-          <option value="Producto">Producto</option>
-          <option value="Pedidos">Pedidos</option>
-          <option value="Nuestras tiendas">Tienda</option>
-          <option value="Quejas">Quejas</option>
-          <option value="Informar de un problema">Informar de un problema</option>
-          <option value="Abre una franquicia">Abre una franquicia</option>
-          <option value="Trabaja con nosotros">Trabaja con nosotros</option>
-        </select>
-        <br><br>
-
-        <input type="submit" value="Enviar">
-
-
-      </form>
+    <div class="character-container-card">
+      <!--1-->
+      <div class="character-card">
+        <!-- Parte delantera-->
+        <div class="face character-front">
+          <img src="/img/index/juego1.jpg" alt="imagen de personaje 1" />
+          <h3>personaje 1</h3>
+        </div>
+        <!-- Parte trasra-->
+        <div class="face character-back">
+          <h3>personaje 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            nostrum reprehenderit suscipit, praesentium sapiente a velit cumque
+            iure vitae dolore incidunt minima obcaecati necessitatibus nisi
+            earum culpa adipisci commodi. Facere!
+          </p>
+          <div class="character-link">
+            <a href="#">Mas infromacion</a>
+          </div>
+        </div>
+      </div>
+      <!--2-->
+      <div class="character-card">
+        <!-- Parte delantera-->
+        <div class="face character-front">
+          <img src="/img/index/juego1.jpg" alt="imagen de personaje 2" />
+          <h3>personaje 2</h3>
+        </div>
+        <!-- Parte trasra-->
+        <div class="face character-back">
+          <h3>personaje 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            nostrum reprehenderit suscipit, praesentium sapiente a velit cumque
+            iure vitae dolore incidunt minima obcaecati necessitatibus nisi
+            earum culpa adipisci commodi. Facere!
+          </p>
+          <div class="character-link">
+            <a href="#">Mas infromacion</a>
+          </div>
+        </div>
+      </div>
+      <!--3-->
+      <div class="character-card">
+        <!-- Parte delantera-->
+        <div class="face character-front">
+          <img src="/img/index/juego1.jpg" alt="imagen de personaje 3" />
+          <h3>personaje 3</h3>
+        </div>
+        <!-- Parte trasra-->
+        <div class="face character-back">
+          <h3>personaje 4</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            nostrum reprehenderit suscipit, praesentium sapiente a velit cumque
+            iure vitae dolore incidunt minima obcaecati necessitatibus nisi
+            earum culpa adipisci commodi. Facere!
+          </p>
+          <div class="character-link">
+            <a href="#">Mas infromacion</a>
+          </div>
+        </div>
+      </div>
+      <!--4-->
+      <div class="character-card">
+        <!-- Parte delantera-->
+        <div class="face character-front">
+          <img src="/img/index/juego1.jpg" alt="imagen de personaje 4" />
+          <h3>personaje 4</h3>
+        </div>
+        <!-- Parte trasra-->
+        <div class="face character-back">
+          <h3>personaje 4</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            nostrum reprehenderit suscipit, praesentium sapiente a velit cumque
+            iure vitae dolore incidunt minima obcaecati necessitatibus nisi
+            earum culpa adipisci commodi. Facere!
+          </p>
+          <div class="character-link">
+            <a href="#">Mas infromacion</a>
+          </div>
+        </div>
+      </div>
+      <!--5-->
+      <div class="character-card">
+        <!-- Parte delantera-->
+        <div class="face character-front">
+          <img src="/img/index/juego1.jpg" alt="imagen de personaje 5" />
+          <h3>personaje 5</h3>
+        </div>
+        <!-- Parte trasra-->
+        <div class="face character-back">
+          <h3>personaje 5</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            nostrum reprehenderit suscipit, praesentium sapiente a velit cumque
+            iure vitae dolore incidunt minima obcaecati necessitatibus nisi
+            earum culpa adipisci commodi. Facere!
+          </p>
+          <div class="character-link">
+            <a href="#">Mas infromacion</a>
+          </div>
+        </div>
+      </div>
+      <!--6-->
+      <div class="character-card">
+        <!-- Parte delantera-->
+        <div class="face character-front">
+          <img src="/img/index/juego1.jpg" alt="imagen de personaje 6" />
+          <h3>personaje 6</h3>
+        </div>
+        <!-- Parte trasra-->
+        <div class="face character-back">
+          <h3>personaje 6</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            nostrum reprehenderit suscipit, praesentium sapiente a velit cumque
+            iure vitae dolore incidunt minima obcaecati necessitatibus nisi
+            earum culpa adipisci commodi. Facere!
+          </p>
+          <div class="character-link">
+            <a href="#">Mas infromacion</a>
+          </div>
+        </div>
+      </div>
+      <!--7-->
+      <div class="character-card">
+        <!-- Parte delantera-->
+        <div class="face character-front">
+          <img src="/img/index/juego1.jpg" alt="imagen de personaje 7" />
+          <h3>personaje 7</h3>
+        </div>
+        <!-- Parte trasra-->
+        <div class="face character-back">
+          <h3>Juego 7</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            nostrum reprehenderit suscipit, praesentium sapiente a velit cumque
+            iure vitae dolore incidunt minima obcaecati necessitatibus nisi
+            earum culpa adipisci commodi. Facere!
+          </p>
+          <div class="character-link">
+            <a href="#">Mas infromacion</a>
+          </div>
+        </div>
+      </div>
+      <!--8-->
+      <div class="character-card">
+        <!-- Parte delantera-->
+        <div class="face character-front">
+          <img src="/img/index/juego1.jpg" alt="imagen de personaje 8" />
+          <h3>personaje 8</h3>
+        </div>
+        <!-- Parte trasra-->
+        <div class="face character-back">
+          <h3>personaje 8</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            nostrum reprehenderit suscipit, praesentium sapiente a velit cumque
+            iure vitae dolore incidunt minima obcaecati necessitatibus nisi
+            earum culpa adipisci commodi. Facere!
+          </p>
+          <div class="character-link">
+            <a href="#">Mas infromacion</a>
+          </div>
+        </div>
+      </div>
+      <!--9-->
+      <div class="character-card">
+        <!-- Parte delantera-->
+        <div class="face character-front">
+          <img src="/img/index/juego1.jpg" alt="imagen de personaje 9" />
+          <h3>personaje 9</h3>
+        </div>
+        <!-- Parte trasra-->
+        <div class="face character-back">
+          <h3>personaje 9</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            nostrum reprehenderit suscipit, praesentium sapiente a velit cumque
+            iure vitae dolore incidunt minima obcaecati necessitatibus nisi
+            earum culpa adipisci commodi. Facere!
+          </p>
+          <div class="character-link">
+            <a href="#">Mas infromacion</a>
+          </div>
+        </div>
+      </div>
+      <!--10-->
+      <div class="character-card">
+        <!-- Parte delantera-->
+        <div class="face character-front">
+          <img src="/img/index/juego1.jpg" alt="imagen de personaje 10" />
+          <h3>personaje 10</h3>
+        </div>
+        <!-- Parte trasra-->
+        <div class="face character-back">
+          <h3>personaje 10</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            nostrum reprehenderit suscipit, praesentium sapiente a velit cumque
+            iure vitae dolore incidunt minima obcaecati necessitatibus nisi
+            earum culpa adipisci commodi. Facere!
+          </p>
+          <div class="character-link">
+            <a href="#">Mas infromacion</a>
+          </div>
+        </div>
+      </div>
+      <!--11-->
+      <div class="character-card">
+        <!-- Parte delantera-->
+        <div class="face character-front">
+          <img src="/img/index/juego1.jpg" alt="imagen de personaje 11" />
+          <h3>personaje 11</h3>
+        </div>
+        <!-- Parte trasra-->
+        <div class="face character-back">
+          <h3>personaje 11</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            nostrum reprehenderit suscipit, praesentium sapiente a velit cumque
+            iure vitae dolore incidunt minima obcaecati necessitatibus nisi
+            earum culpa adipisci commodi. Facere!
+          </p>
+          <div class="character-link">
+            <a href="#">Mas infromacion</a>
+          </div>
+        </div>
+      </div>
+      <!--12-->
+      <div class="character-card">
+        <!-- Parte delantera-->
+        <div class="face character-front">
+          <img src="/img/index/juego1.jpg" alt="imagen de personaje 12" />
+          <h3>personaje 12</h3>
+        </div>
+        <!-- Parte trasra-->
+        <div class="face character-back">
+          <h3>personaje 12</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            nostrum reprehenderit suscipit, praesentium sapiente a velit cumque
+            iure vitae dolore incidunt minima obcaecati necessitatibus nisi
+            earum culpa adipisci commodi. Facere!
+          </p>
+          <div class="character-link">
+            <a href="#">Mas infromacion</a>
+          </div>
+        </div>
+      </div>
     </div>
 
-  </section>
-  <!-- FIN SECCION CONTACTO -->
+    <!-- SECCION CONTACTO  -->
+    <section id="contact">
+      <div class="container-form-index">
+        <h2>CONTACTA CON NOSOTROS</h2>
+        <h3>Estaremos encantados de ayudarle personalmente.</h3>
 
+        <form action="action_page.php" autocomplete="on">
+          <label for="fname">Nombre:</label><br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Escriba su nombre completo"
+          /><br />
+          <label for="text">Descripción:</label><br />
+          <input
+            type="text"
+            id="text"
+            name="text"
+            placeholder="Escriba su mensaje aquí"
+          /><br /><br />
 
-</body>
+          <label for="temas">Escoge un tema:</label>
 
-<!-- SECCION FOOTER -->
-<footer>
-  <p>Author: Nathaly Ramírez y Ali Chalak</p>
-  <hr>
-  <p><a href="mailto:nathalyramirez.web@gmail.com">nathalyramirez.web@gmail.com</a></p>
-</footer>
-<!--FIN  SECCION FOOTER -->
+          <select id="temas-contacto" name="temas">
+            <option value="Producto">Producto</option>
+            <option value="Pedidos">Pedidos</option>
+            <option value="Nuestras tiendas">Tienda</option>
+            <option value="Quejas">Quejas</option>
+            <option value="Informar de un problema">
+              Informar de un problema
+            </option>
+            <option value="Abre una franquicia">Abre una franquicia</option>
+            <option value="Trabaja con nosotros">Trabaja con nosotros</option>
+          </select>
+          <br /><br />
+
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
+    </section>
+    <!-- FIN SECCION CONTACTO -->
+  </body>
+
+  <!-- SECCION FOOTER -->
+  <footer>
+    <p>Author: Nathaly Ramírez y Ali Chalak</p>
+    <hr />
+    <p>
+      <a href="mailto:nathalyramirez.web@gmail.com"
+        >nathalyramirez.web@gmail.com</a
+      >
+    </p>
+  </footer>
+  <!--FIN  SECCION FOOTER -->
+</html>
