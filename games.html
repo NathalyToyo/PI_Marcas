@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open System Gaming</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="icon/favicon.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Open System Gaming</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="icon/favicon.jpg" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <body>
+    <!-- SECCION MENU  -->
 
-</head>
-
-
-<body>
-  
-
-        <!-- SECCION MENU  -->
-    
     <div class="topnav" id="myTopnav">
       <!-- <a href="#about"> <img class="logo-nav" src="icon/favicon.jpg" alt=""></a>
        -->
@@ -27,90 +25,152 @@
       <a href="character.html">Personajes </a>
       <a href="blog.html">Blog </a>
       <a href="login.html">Área de clientes</a>
-      
+
       <!-- /*boton 3 rayitas menu para menu responsive de w3school*/ -->
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <!-- ^ Esta línea crea un enlace  con una clase llamada “icon”. 
           ejecuta una función de JavaScript cuando se hace clic en el enlace.  -->
 
-        <i class="fa fa-bars"></i> 
+        <i class="fa fa-bars"></i>
         <!-- Dentro del enlace, hay un ícono (3 rayitas) con la clase  -->
       </a>
     </div>
-  
+
     <!-- /*boton 3 rayitas menu se activa cuando se hace clic en un botón o enlace con la clase “topnav”
      esto permite que el menú de la web se vuelva “responsive”´
       (es decir, se adapte a diferentes tamaños de pantalla -->
     <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
       }
-    }
     </script>
-    
-     <!-- FIN SECCION MENU  -->
 
+    <!-- FIN SECCION MENU  -->
 
-
-    
-<!-- PONER EJERCICIO DE FLIPCARD PARA DISTINTOS JUEGOS OJO CON EL CSS   -->
-
-
-
-
-
-
-
-
-<!-- SECCION CONTACTO -->
-
-  <section id="contact">
-    <div class="container-form-index">
-      <h2>CONTACTA CON NOSOTROS</h2>
-      <h3>Estaremos encantados de ayudarle personalmente.</h3>
-
-      <form action="action_page.php" autocomplete="on">
-        <label for="fname">Nombre:</label><br>
-        <input type="text" id="fname" name="fname" placeholder="Escriba su nombre completo"><br>
-        <label for="text">Descripción:</label><br>
-        <input type="text" id="text" name="text" placeholder="Escriba su mensaje aquí"><br><br>
-
-        <label for="temas">Escoge un tema:</label>
-
-        <select id="temas-contacto" name="temas">
-
-
-          <option value="Producto">Producto</option>
-          <option value="Pedidos">Pedidos</option>
-          <option value="Nuestras tiendas">Tienda</option>
-          <option value="Quejas">Quejas</option>
-          <option value="Informar de un problema">Informar de un problema</option>
-          <option value="Abre una franquicia">Abre una franquicia</option>
-          <option value="Trabaja con nosotros">Trabaja con nosotros</option>
-        </select>
-        <br><br>
-
-        <input type="submit" value="Enviar">
-
-
-
-
-      </form>
+    <!--1-->
+    <div class="game-container-card">
+      <div class="card">
+        <!-- Parte delantera-->
+        <div class="face front">
+          <img src="/img/index/juego1.jpg" alt="imagen de juego 1" />
+          <h3>Drake</h3>
+        </div>
+        <!-- Parte trasra-->
+        <div class="face back">
+          <h3>Drake</h3>
+          <p>
+            Drake, whose full name is Aubrey Drake Graham, is a Grammy-winning
+            artist known for his emotional lyrics, catchy beats, and frequent
+            collaborations with other popular musicians.
+          </p>
+          <div class="link">
+            <a href="https://www.instagram.com/champagnepapi/"
+              >Mas infromacion</a
+            >
+          </div>
+        </div>
+      </div>
+      <!--2-->
+      <div class="card">
+        <!-- Parte delantera-->
+        <div class="face front">
+          <img src="/img/index/juego1.jpg" alt="imagen de juego 2" />
+          <h3>21Savage</h3>
+        </div>
+        <!-- Parte trasra-->
+        <div class="face back">
+          <h3>21Savage</h3>
+          <p>
+            21 Savage, whose real name is Shayaa Bin Abraham-Joseph, is a rapper
+            from Atlanta known for his gritty lyrics and distinctive voice, with
+            hits such as "Bank Account" and "A Lot".
+          </p>
+          <div class="link">
+            <a href="https://www.instagram.com/21savage/">Mas infromacion</a>
+          </div>
+        </div>
+      </div>
+      <!--3-->
+      <div class="card">
+        <!-- Parte delantera-->
+        <div class="face front">
+          <img src="/img/index/juego1.jpg" alt="imagen de juego 3" />
+          <h3>Travis Scott</h3>
+        </div>
+        <!-- Parte trasra-->
+        <div class="face back">
+          <h3>Travis Scott</h3>
+          <p>
+            Travis Scott, whose real name is Jacques Berman Webster II, is a
+            rapper, singer, and songwriter from Houston, Texas, known for his
+            unique sound and energetic live performances. He has released
+            multiple successful albums, including "Astroworld".
+          </p>
+          <div class="link">
+            <a href="https://www.instagram.com/travisscott/">Mas infromacion</a>
+          </div>
+        </div>
+      </div>
     </div>
 
-  </section>
-<!--FIN  SECCION CONTACTO -->
+    <!-- SECCION CONTACTO -->
 
+    <section id="contact">
+      <div class="container-form-index">
+        <h2>CONTACTA CON NOSOTROS</h2>
+        <h3>Estaremos encantados de ayudarle personalmente.</h3>
 
-</body>
-<!-- SECCION FOOTER -->
-<footer>
-  <p>Author: Nathaly Ramírez y Ali Chalak</p>
-  <hr>
-  <p><a href="mailto:nathalyramirez.web@gmail.com">nathalyramirez.web@gmail.com</a></p>
-</footer>
-<!--FIN  SECCION FOOTER -->
+        <form action="action_page.php" autocomplete="on">
+          <label for="fname">Nombre:</label><br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Escriba su nombre completo"
+          /><br />
+          <label for="text">Descripción:</label><br />
+          <input
+            type="text"
+            id="text"
+            name="text"
+            placeholder="Escriba su mensaje aquí"
+          /><br /><br />
+
+          <label for="temas">Escoge un tema:</label>
+
+          <select id="temas-contacto" name="temas">
+            <option value="Producto">Producto</option>
+            <option value="Pedidos">Pedidos</option>
+            <option value="Nuestras tiendas">Tienda</option>
+            <option value="Quejas">Quejas</option>
+            <option value="Informar de un problema">
+              Informar de un problema
+            </option>
+            <option value="Abre una franquicia">Abre una franquicia</option>
+            <option value="Trabaja con nosotros">Trabaja con nosotros</option>
+          </select>
+          <br /><br />
+
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
+    </section>
+    <!--FIN  SECCION CONTACTO -->
+  </body>
+  <!-- SECCION FOOTER -->
+  <footer>
+    <p>Author: Nathaly Ramírez y Ali Chalak</p>
+    <hr />
+    <p>
+      <a href="mailto:nathalyramirez.web@gmail.com"
+        >nathalyramirez.web@gmail.com</a
+      >
+    </p>
+  </footer>
+  <!--FIN  SECCION FOOTER -->
+</html>
