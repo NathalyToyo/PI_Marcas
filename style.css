@@ -449,7 +449,7 @@ body{
 .game-card .game-back {
   transform: perspective(600px)rotateY(180deg);
   background: black;
-  padding: 40px;
+  padding: 50px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -609,6 +609,7 @@ transform: perspective(600px)rotateY(360deg);
   height: 200px;
   box-shadow: 0 0 10px  #666;
   border: 5px solid #fff;
+  
 }
 
 .products-container div img~span{
