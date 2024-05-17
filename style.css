@@ -408,7 +408,7 @@ body{
 
 .game-card {
   position: relative;
-  width: 300px;
+  width: 350px;
   height: 350px;
   margin: 20px;
 }
@@ -449,7 +449,7 @@ body{
 .game-card .game-back {
   transform: perspective(600px)rotateY(180deg);
   background: black;
-  padding: 15px;
+  padding: 40px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -575,93 +575,66 @@ transform: perspective(600px)rotateY(180deg);
 .character-card:hover .character-back {
 transform: perspective(600px)rotateY(360deg);
 }
- 
 
-/*flip card de products.html*/
-.products-container-card{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+/*galeria de products.html*/
+.products-fotos{
+  width: 100%;
+  margin: 0 auto;
 }
 
-.products-card {
-position: relative;
-width: 300px;
-height: 350px;
-margin: 20px;
+.products-container::after{
+
+  content: "";
+  display: block;
+  height: 0px;
+  clear: both;
 }
 
-.products-card .face {
-position: absolute;
-width: 100%;
-height: 100%;
-backface-visibility: hidden;
-border-radius: 10px;
-overflow: hidden;
-transition: 0.5s;
+.products-container{
+  width: 90%;
+  margin: 0 9%;
 }
 
-.products-card .products-front {
-transform: perspective(600px) rotateY(0deg);
-box-shadow: 0px 5px 10px black;
+.products-container div{
+  width: 28%;
+  height: auto;
+  display: inline;
+  float: left;
+  margin: 0% 3% 0% 0%;
+  padding: 0px;
 }
 
-.products-card .products-front img {
-position: absolute;
-width: 100%;
-height: 100%;
-object-fit: cover;
+.products-container div img{
+  width: 100%;
+  height: 200px;
+  box-shadow: 0 0 10px  #666;
+  border: 5px solid #fff;
 }
 
-.products-card .products-front h3 {
-position: absolute;
-bottom: 0px;
-width: 100%;
-height: 45px;
-line-height: 45px;
-color: blanchedalmond;
-background: black;
-text-align: center;
+.products-container div img~span{
+  width: 100%;
+  display: block;
+  opacity: 0;
+  margin: 0;
+  padding: 2px 5px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 10px #666;
+  text-align: center;
 }
 
-.products-card .products-back {
-transform: perspective(600px)rotateY(180deg);
-background: black;
-padding: 15px;
-color: white;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-text-align: center;
-box-shadow: 0px 5px 10px black;
+.products-container div img:hover+span{
+  opacity: 1;
 }
 
-.products-card .products-back .products-link {
-border-top: 1px solid white;
-height: 50px;
-line-height: 50px;
+.products-container:hover div{
+  opacity: 0.2;
+  transform: scale(0.7);
+  transition: 1s;
 }
 
-.products-card .products-back .products-link a {
-color: white;
-}
-
-.products-card .products-back h3 {
-font-size: 30px;
-margin-top: 20px;
-letter-spacing: 2px;
-}
-
-.products-card .products-back p {
-letter-spacing: 1px;
-}
-
-.products-card:hover .products-front {
-transform: perspective(600px)rotateY(180deg);
-}
-
-.products-card:hover .products-back {
-transform: perspective(600px)rotateY(360deg);
+.products-container:hover div:hover{
+  opacity: 1;
+  transform: scale(1);
+  
 }
