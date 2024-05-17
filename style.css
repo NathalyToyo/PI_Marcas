@@ -45,6 +45,7 @@ h2 {
       color: #251505cd;
     text-align: center;
     border-bottom: 1px solid;
+    padding: 0px;
   }
 
   /* texto div blanco apartado productos */
@@ -486,6 +487,14 @@ body{
   transform: perspective(600px)rotateY(360deg);
 }
 
+.character-titulo{
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.character-titulo h1{
+  margin-bottom: 0px;
+}
 
 /*flip card de character.html*/
 .character-container-card{
@@ -494,13 +503,15 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  
 }
 
 .character-card {
 position: relative;
-width: 300px;
-height: 350px;
+width: 400px;
+height: 450px;
 margin: 20px;
+margin-top: 0px;
 }
 
 .character-card .face {
