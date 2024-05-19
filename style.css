@@ -7,50 +7,82 @@
 }
 
 body {
+   padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    /* background: url(img/fondo8.jpg); */
-    background-color: #725b443d;
+     background-color: #8194d4; 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
   }
 
 
-/* .logo-nav {
-  width: 50px;
-  height: auto;
-  display: block;
-  margin: 0 ;
+
+#index-section {
+  position: relative;
+  background-image: url(img/lanzamiento.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  margin: 0;
   padding: 0;
-} */
-
-/* General */
-section {
-  padding: 60px 0;
-}
-.container-index {
-  width: 98%;
-  max-width: 900px;
-  margin: 0 auto;
 }
 
-#title-index {
-    text-align: center;
+#index-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Ajusta la opacidad según sea necesario */
+  z-index: 1;
+}
+
+#index-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+.index-text{
+  margin: 0 ;
+  padding: 30px;
+  color: white;
+  }
+
+  .index-h1{
+    font-size: 50px;
+   }
+   .index-h2{
+    color: white;
+   }
+
+   /* 
+  FONDO CLARO medio Y FONDO BLANCO */
+
+  .index-info-bg {
+    background-color: #02050f;  /*azul*/
+    padding: 20px 10px;
+    color: white;
+  }
+  .index-bg-white {
+    background-color: white;
+    margin: 20px 0;
+    color: #1d1327;
   }
 
 h2 {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-      color: #251505cd;
+      color: white;
     text-align: center;
     border-bottom: 1px solid;
+    margin: 0;
+    padding: 0;
   }
 
-  /* texto div blanco apartado productos */
-  .text {
-    margin: 20px 0;
-  }
+
   
   /* Responsive - Mobile First  */
   
@@ -165,7 +197,8 @@ font-size: 18px;
 
   .topnav {
     overflow: hidden;
-    background-color: #8a6948be;
+    background-color: #02050f; /*azul*/
+    /* background-color: #1d1327; morado */
   }
   
   .topnav a {
@@ -179,13 +212,13 @@ font-size: 18px;
   }
   
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: #af25ba; /*fucsia*/
     color: black;
   }
   
   .topnav a.active {
-    background-color: #8a6948fa;
-    color: white;
+    /* background-color: rgba(23,76,158,255); azul */
+    /* color: white; */
   }
   
   /* TRES RAYITAS */
@@ -216,21 +249,11 @@ font-size: 18px;
       text-align: left;
     }
   }
-/* 
-  FONDO CLARO medio Y FONDO BLANCO */
 
-  .bg-light {
-    background-color: #8a6948be;
-    margin-top: 20px;
-    padding: 20px 10px;
-  }
-  .bg-white {
-    background-color: white;
-  }
 
 
   #store  {
-    background-color: #25150539;
+    background-color: #173492;  /*azul*/
     text-align: center;
   
     /* https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_background_hero */
@@ -240,12 +263,16 @@ font-size: 18px;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .index-store-h2 {
+    margin-top: 20px;
+  }
   
   .store-card{
     width: 90%;
     display: inline-block;
     text-align: center;
-    background-color: #2515053b;
+    background-color: #1d1327;
     color: white;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -259,7 +286,7 @@ font-size: 18px;
       width: 20%;
     }
     .store-card:hover {
-      background-color: #8a6948be;
+      background-color: #8958b9;
     }
   }
   .store-card img {
@@ -273,13 +300,13 @@ font-size: 18px;
   #virtual h3,
   #realm h3,
   #galaxy h3{
-    background-color: #8a6948be;
+    background-color: #8b6fa7;
     border-radius: 10px;
   }
   
   .store-card p,
   #store h3 {
-    color:  #251505cd;
+    color:  white;
   }
   
   
@@ -304,21 +331,72 @@ font-size: 18px;
   
   /* footer */
   footer {
+    
     padding: 30px 0;
-    background-color: #2b1805b2;
+    background-color: #02050f; /*azul*/
+
     text-align: center;
     color: #ffffffd0;
   }
 
+/* formulario contacto webs */
 
-  .container-form-index {
-    width: 98%;
-    max-width: 900px;
-    margin: 0 auto;
-    color: #251505cd;
+  #contact {
+    background-color: #0A0F24;
+    padding: 40px 20px;
+    color: #CCCCCC;
     text-align: center;
-   
-  }
+}
+
+#contact .container-form-index {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #162342;
+  padding: 10px 20px; /* Ajusta este valor para reducir la altura */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#contact h2, #contact h3 {
+    color: #8ca7c2;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#contact label {
+    
+    color: #CCCCCC;
+}
+
+#contact input[type="text"], #contact select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact input[type="submit"] {
+    background-color: #E83E8C;
+    color: #CCCCCC;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    align-self: center;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #294D71;
+}
+
+/* fin formulario webs */
   
 
  /* formulario login */
@@ -336,9 +414,10 @@ body{
 .form-contenedor{
   width: 100%;
   padding: 15px;
+  margin-bottom: 20px;
 }
 .form-formulario{
-  background-color: #8a694849;
+  background-color: #7a8cb8; /*azul*/
   margin-top: 100px;
 }
 .form-h1{
@@ -369,7 +448,8 @@ body{
   width: 100%;
   font-size: 20px;
   color: white;
-  background-color: #1a2537;
+  background-color: #050f29; /*azul*/
+
   padding: 15px 20px;
   border-radius: 5px;
   cursor: pointer;
@@ -382,7 +462,7 @@ body{
 }
 .link{
   text-decoration: none;
-  color: #1a2537;
+  color: #213659;
   font-weight: 600px;
 }
 .link:hover{
