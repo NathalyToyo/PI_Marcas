@@ -1,128 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open System Gaming</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="icon/favicon.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Open System Gaming</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="icon/favicon.jpg" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-</head>
-
-
-<body>
-
-  <!-- SECCION MENU  -->
-  <div class="topnav" id="myTopnav">
-    <!-- <a href="#about"> <img class="logo-nav" src="icon/favicon.jpg" alt=""></a>
+  <body>
+    <!-- SECCION MENU  -->
+    <div class="topnav" id="myTopnav">
+      <!-- <a href="#about"> <img class="logo-nav" src="icon/favicon.jpg" alt=""></a>
        -->
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">Quiénes somos</a>
-    <a href="games.html">Juegos</a>
-    <a href="products.html">Expansiones / Productos </a>
-    <a href="character.html">Personajes </a>
-    <a href="blog.html">Blog </a>
-    <a href="login.html">Área de clientes</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">Quiénes somos</a>
+      <a href="games.html">Juegos</a>
+      <a href="products.html">Expansiones / Productos </a>
+      <a href="character.html">Personajes </a>
+      <a href="blog.html">Blog </a>
+      <a href="login.html">Área de clientes</a>
 
-    <!-- /*boton 3 rayitas menu para menu responsive de w3school*/ -->
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <!-- ^ Esta línea crea un enlace  con una clase llamada “icon”. 
+      <!-- /*boton 3 rayitas menu para menu responsive de w3school*/ -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <!-- ^ Esta línea crea un enlace  con una clase llamada “icon”. 
           ejecuta una función de JavaScript cuando se hace clic en el enlace.  -->
 
-      <i class="fa fa-bars"></i>
-      <!-- Dentro del enlace, hay un ícono (3 rayitas) con la clase  -->
-    </a>
-  </div>
+        <i class="fa fa-bars"></i>
+        <!-- Dentro del enlace, hay un ícono (3 rayitas) con la clase  -->
+      </a>
+    </div>
 
-  <!-- /*boton 3 rayitas menu se activa cuando se hace clic en un botón o enlace con la clase “topnav”
+    <!-- /*boton 3 rayitas menu se activa cuando se hace clic en un botón o enlace con la clase “topnav”
      esto permite que el menú de la web se vuelva “responsive”´
       (es decir, se adapte a diferentes tamaños de pantalla -->
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
       }
-    }
-  </script>
- <!-- FIN SECCION MENU  -->
+    </script>
+    <!-- FIN SECCION MENU  -->
 
- 
+    <!-- SECCION FORMULARIO  -->
 
-  <!-- SECCION FORMULARIO  -->
-
-  <form class="form-formulario">
-    <h1 class="form-h1">LOGIN DE USUARIO</h1>
-    <div class="form-contenedor">
-      <div class="form-input-contenedor">
-        <img class="form-icon" src="icon/mensaje2.png">
-        <input type="text" placeholder="Correo electronico" class="email">
+    <form class="form-formulario">
+      <h1 class="form-h1">LOGIN DE USUARIO</h1>
+      <div class="form-contenedor">
+        <div class="form-input-contenedor">
+          <img class="form-icon" src="icon/email.png" />
+          <input type="text" placeholder="Correo electronico" class="email" />
+        </div>
+        <div class="form-input-contenedor">
+          <img class="form-icon" src="icon/password.png" />
+          <input type="password" placeholder="Contraseña" class="passwd" />
+        </div>
+        <input type="submit" value="Login" class="form-button" />
+        <p class="form-p">
+          Al registrarse, acepta nuestra condiciones de uso y politica de
+          privacidad.
+        </p>
+        <p class="form-p">
+          ¿No tiene una cuenta? <a class="link" href="signup.html">Registro</a>
+        </p>
       </div>
-      <div class="form-input-contenedor">
-        <img class="form-icon" src="icon/password.png">
-        <input type="password" placeholder="Contraseña" class="passwd">
+    </form>
+    <!-- FIN SECCION FORMULARIO  -->
+
+    <!-- SECCION CONTACTO  -->
+    <section id="contact">
+      <div class="container-form-index">
+        <h2>CONTACTA CON NOSOTROS</h2>
+        <h3>Estaremos encantados de ayudarle personalmente.</h3>
+
+        <form action="action_page.php" autocomplete="on">
+          <label for="fname">Nombre:</label><br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Escriba su nombre completo"
+          /><br />
+          <label for="text">Descripción:</label><br />
+          <input
+            type="text"
+            id="text"
+            name="text"
+            placeholder="Escriba su mensaje aquí"
+          /><br /><br />
+
+          <label for="temas">Escoge un tema:</label>
+
+          <select id="temas-contacto" name="temas">
+            <option value="Producto">Producto</option>
+            <option value="Pedidos">Pedidos</option>
+            <option value="Nuestras tiendas">Tienda</option>
+            <option value="Quejas">Quejas</option>
+            <option value="Informar de un problema">
+              Informar de un problema
+            </option>
+            <option value="Abre una franquicia">Abre una franquicia</option>
+            <option value="Trabaja con nosotros">Trabaja con nosotros</option>
+          </select>
+          <br /><br />
+
+          <input type="submit" value="Enviar" />
+        </form>
       </div>
-      <input type="submit" value="Registro" class="form-button">
-      <p class="form-p">Al registrarse, acepta nuestra condiciones de uso y politica de privacidad.</p>
-      <p class="form-p">¿No tiene una cuenta? <a class="link" href="signup.html">Registro</a></p>
-    </div>
-  </form>
-  <!-- FIN SECCION FORMULARIO  -->
+    </section>
+    <!-- FIN SECCION CONTACTO  -->
+  </body>
 
-
-
-
-
-
-
-
-
-  <!-- SECCION CONTACTO  -->
-  <section id="contact">
-    <div class="container-form-index">
-      <h2>CONTACTA CON NOSOTROS</h2>
-      <h3>Estaremos encantados de ayudarle personalmente.</h3>
-
-      <form action="action_page.php" autocomplete="on">
-        <label for="fname">Nombre:</label><br>
-        <input type="text" id="fname" name="fname" placeholder="Escriba su nombre completo"><br>
-        <label for="text">Descripción:</label><br>
-        <input type="text" id="text" name="text" placeholder="Escriba su mensaje aquí"><br><br>
-
-        <label for="temas">Escoge un tema:</label>
-
-        <select id="temas-contacto" name="temas">
-
-
-          <option value="Producto">Producto</option>
-          <option value="Pedidos">Pedidos</option>
-          <option value="Nuestras tiendas">Tienda</option>
-          <option value="Quejas">Quejas</option>
-          <option value="Informar de un problema">Informar de un problema</option>
-          <option value="Abre una franquicia">Abre una franquicia</option>
-          <option value="Trabaja con nosotros">Trabaja con nosotros</option>
-        </select>
-        <br><br>
-
-        <input type="submit" value="Enviar">
-
-
-      </form>
-    </div>
-
-  </section>
-  <!-- FIN SECCION CONTACTO  -->
-
-</body>
-
-<!-- SECCION FOOTER -->
-<footer>
-  <p>Author: Nathaly Ramírez y Ali Chalak</p>
-  <hr>
-  <p><a href="mailto:nathalyramirez.web@gmail.com">nathalyramirez.web@gmail.com</a></p>
-</footer>
-<!--FIN  SECCION FOOTER -->
+  <!-- SECCION FOOTER -->
+  <footer>
+    <p>2024 Empresa Open System Gaming. Todos los derechos reservados.</p>
+    <p>Author: Nathaly Ramírez y Ali Chalak</p>
+    <hr />
+    <p>
+      <a href="mailto:nathalyramirez.web@gmail.com"
+        >nathalyramirez.web@gmail.com</a
+      >
+    </p>
+  </footer>
+  <!--FIN  SECCION FOOTER -->
+</html>
