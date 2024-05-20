@@ -84,12 +84,7 @@ h2 {
       color: white;
     text-align: center;
     border-bottom: 1px solid;
-<<<<<<< HEAD
-    padding: 0px;
-=======
-    margin: 0;
-    padding: 0;
->>>>>>> baf889fb535b99e75edc1235047619c74216b34b
+
   }
 
 
@@ -429,6 +424,7 @@ body{
 .form-formulario{
   background-color: #7a8cb8; /*azul*/
   margin-top: 100px;
+  
 }
 .form-h1{
   padding-top: 20px;
@@ -481,7 +477,7 @@ body{
 @media(min-width: 768px){
   .form-formulario{
       margin-top: 15px;
-      width: 500px;
+      width: 600px;
       margin: auto;
       border-radius: 2%;
   }
@@ -753,10 +749,15 @@ transform: perspective(600px)rotateY(360deg);
 
 @media screen and (max-width: 600px) {
   .products-container div {
-    width: 90%; /* Set width to 90% for better spacing */
-    margin: 0 auto 20px; /* Center-align the containers and add bottom margin */
-    float: left; /* Remove float */
+    width: 90%;
+    margin: 0 auto 20px; 
+    float: left; 
   }
+}
+
+/* google map */
+.google-map {
+  text-align: center;
 }
 
 
