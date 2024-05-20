@@ -688,6 +688,9 @@ transform: perspective(600px)rotateY(360deg);
   text-align: center;
 }
 
+.blog-container-text {
+  padding: 10px;
+}
 @media only screen and (max-width: 600px) {
   .blog-video {
     position: relative;
